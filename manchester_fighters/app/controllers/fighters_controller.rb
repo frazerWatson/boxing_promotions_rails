@@ -19,4 +19,12 @@ class FightersController < ApplicationController
   def show
     @fighters = Fighter.all
   end
+
+  def set_fighter
+    @fighter = Fighter.find(params[:id])
+  end
+
+  def fighter_params
+    params.require(:fighter).permit(:name, :avatar, :weight, :height, :experience)
+  end
 end

@@ -10,7 +10,9 @@
 <% @fighters.each do |fighter| %>
 <li>
   <%= fighter.name %>
-  <%= fighter.avatar %>
+  <p>
+    <%= image_tag fighter.avatar.url(:medium), class:"profile_circle" %></br>
+  </p>
   <%= fighter.height %>
   <%= fighter.weight %>
  
