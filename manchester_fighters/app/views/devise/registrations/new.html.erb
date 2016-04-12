@@ -21,13 +21,15 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <%= f.fields_for :fighter do |profile_form| %>
- <div><%= profile_form.label :name %><br/>
- <%= profile_form.text_field :name %></div>
-  <div><%= profile_form.label :weight %><br />
-    <%= profile_form.text_field :weight %></div>
- <div><%= profile_form.label :height %><br />
- <%= profile_form.text_field :height %></div>
+  <%= f.fields_for :fighter do |fighter_form| %>
+ <div><%= fighter_form.label :name %><br/>
+ <%= fighter_form.text_field :name %></div>
+ <div><%= fighter_form.label :avatar %><br>
+ <%= fighter_form.file_field :avatar %></div>
+  <div><%= fighter_form.label :weight %><br />
+    <%= fighter_form.text_field :weight %></div>
+ <div><%= fighter_form.label :height %><br />
+ <%= fighter_form.text_field :height %></div>
 
   <% end %>
 

@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   end
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation, profile_attributes: [:name, :avatar, :weight, :height, :experience, :id, :user_id])
+    params.require(:user).permit(:email, :password, :password_confirmation, fighter_attributes: [:name, :avatar, :weight, :height, :experience, :id, :user_id])
   end
 
 end
