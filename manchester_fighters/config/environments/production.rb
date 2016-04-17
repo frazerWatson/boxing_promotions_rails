@@ -1,6 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-     config.paperclip_defaults = {
+  config.serve_static_assets = true
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  config.assets.compile = true
+
+  config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
     :bucket => ENV['S3_BUCKET_NAME'],
@@ -9,7 +13,7 @@ Rails.application.configure do
   },
   :url => ':s3_domain_url',
   :path => '/:class/:attachment/:id_partition/:style/:filename'
-}
+  }
   # Code is not reloaded between requests.
   config.cache_classes = true
 
