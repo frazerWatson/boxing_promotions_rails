@@ -17,10 +17,73 @@
  *:focus {
 outline: 0;
 }
-
-body {
- background-color: black;
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  border: 2px;
+  border-color: gold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: gold;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+.header_logo {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+a.navbar-brand {
+  color:gold;
+}
+
+
 
 p.alert {
   background-color: black;
@@ -33,7 +96,8 @@ p.notice {
 }
 
 .container-fluid {
-  padding: 0;
+  
+  
 }
 
 #header {
@@ -45,16 +109,33 @@ p.notice {
 
 #navbar {
   position:relative;
-  color: gold;
+  background: black;
+  border: 2px gold;
+}
+
+div#navbar.navbar-collapse.collapse.in {
+  background: #333;
 }
 
 div.container {
   width:100%;
-  
-  padding-right: 0px;
-  padding-left: 0px;
+  background: black;
+  color: black;
+  padding-right:1px;
+  padding-left: 1px;
 }
+
+
+button.navbar-toggle.collapsed {
+  border-color: gold;
   
+}
+
+
+  
+  .active {
+    border: 2px gold;
+  }
 
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -62,7 +143,7 @@ div.container {
   
  -moz-border-radius: 10px; /* FF1+ */
     -webkit-border-radius: 10px; /* Saf3-4, iOS 1+, Android 1.5+ */
-    border-radius: 10px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+    border-radius: 1px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
     overflow:hidden;
     z-index: 20;
 }

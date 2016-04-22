@@ -26,7 +26,7 @@
 }
 
 .carousel {
-  height:100%;
+  height:95%;
 }
 
 .carousel-control { background: none !important; filter: none !important; progid:none !important; }
@@ -35,12 +35,19 @@
   .carousel-caption-h1 {
     vertical-align: top;
     font-size: 60px;
-font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', cursive;
 }
 
 .carousel-inner > h1 {
   font-family: 'Great Vibes', cursive;
   text-align: center;
+}
+
+.carousel-inner>.item>img {
+  vertical-align: center;
+  width:100%;
+  height:auto;
+  overflow:hidden
 }
 
 .profile_circle {

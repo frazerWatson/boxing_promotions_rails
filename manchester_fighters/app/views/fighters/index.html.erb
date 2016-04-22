@@ -2,10 +2,10 @@
 <html>
 <head>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"></script>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="/stylesheets/road_trips.css">
+  
+ <link rel="stylesheet" href="/stylesheets/fighters.scss">
 <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -24,8 +24,8 @@
               <h1 class="carousel-caption-h1">Dedicated</h1>
               <span><h3>Providing fighters to shows nationwide every weekend</h3></span>
               <div>
-              <%= button_to 'Book a fighter now', new_user_registration_path, class:
-              'jumbotron_button', method: :get %>
+              <%= button_to 'Book a fighter now', contacts_path, class:
+              'jumbotron_button actions', method: :get %>
             </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
             <div class="carousel-caption">
               <h1 class="carousel-caption-h1">Reliable</h1>
               <h3>All our boxers are fit, well trained and ready to fight at any time</h3>
-              <%= button_to 'Book a fighter now', new_user_registration_path, class:
+              <%= button_to 'Book a fighter now', contacts_path, class:
               'jumbotron_button', method: :get%>
             </div>
           </div>
@@ -47,7 +47,7 @@
             <div class="carousel-caption">
               <h1 class="carousel-caption-h1">Disciplined</h1>
               <h3>Professional service both in and out of the ring</h3>
-              <%= button_to 'Book a fighter now', new_user_registration_path, class:
+              <%= button_to 'Book a fighter now', contacts_path, class:
               'jumbotron_button', method: :get%>
             </div>
           </div>

@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  match 'fighters/show' => 'fighters#show', :via => :get
+  match 'fighters/contact' => 'fighters#contact', :via => :get
   # You can have the root of your site routed with "root"
-  resources :fighters
+  resources :fighters, :contacts, :about, :event_management
 
   root 'fighters#index'
 

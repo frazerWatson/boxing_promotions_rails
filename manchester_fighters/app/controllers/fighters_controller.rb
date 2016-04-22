@@ -1,9 +1,14 @@
 class FightersController < ApplicationController
   def index
+    @fighters = Fighter.all
   end
 
   def new
     @fighter = Fighter.new
+  end
+  
+  def contact
+    
   end
 
   def create 
@@ -19,6 +24,9 @@ class FightersController < ApplicationController
   def show
     @fighters = Fighter.all
   end
+
+
+private
 
   def set_fighter
     @fighter = Fighter.find(params[:id])

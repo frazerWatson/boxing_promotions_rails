@@ -9,42 +9,38 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  
+  
    <link rel="stylesheet" href="/stylesheets/application.scss">
 </head>
 <body>
 
+ 
   <div id='header' class="container-fluid">
+  <%= link_to image_tag("/assets/rsz_1rsz_1logo1.png"), root_path, class: "header_logo"  %>
   <h1>Manchester Fighters</h1>
-  <h3>Road Warriors</h3>
-  <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="fighters/show">Fighters</a></li>
-                <li><a href="users/sign_up">Register as a fighter</a></li>
-                <li><a href="#contact">Event managment</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <h3>Road Warriors</h3>
   </div>
-    </div>
-      </div>  
+  
+ <div>
+  <ul class="topnav">
+  <li class="active"><%= link_to 'MF', root_path,  method: :get%></li>
+  <li><%= link_to 'About', about_index_path,  method: :get%></li>
+  <li><%= link_to 'Fighters', fighters_show_path %></li>
+  <li><%= link_to 'Event management', event_management_index_path,  method: :get%></li>
+  <li><%= link_to 'Register as a fighter', new_user_registration_path,  method: :get%></li>
+  <li><%= link_to 'Contact', contacts_path,  method: :get%></li>
+  
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+
+
+ </div>
+
 
 
 <%= yield %>
@@ -55,7 +51,7 @@
 
 <div id="footer">
       <br>
-      
+
       Follow us: 
       <a target="_blank" title="follow me on facebook" href="https://www.facebook.com/groups/585152941597556/?fref=ts"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook40x40.png" border=0></a>
       <a target="_blank" title="follow me on instagram" href="https://www.instagram.com/manchester_fighters/"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram40x40.png" border=0></a>
@@ -65,5 +61,12 @@
       Manchester Fighters © 2016
       <br>
    </div>
+  
+<script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
+
 </body>
 </html>
