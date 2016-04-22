@@ -75,6 +75,7 @@ ul.topnav li.icon {display: none;}
 
 
 .header_logo {
+  background: black;
   float: left;
   margin-top: 15px;
   margin-left: 15px;
@@ -85,6 +86,12 @@ a.navbar-brand {
   color:gold;
 }
 
+
+.header_logo {
+  background: black;
+  float: center;
+  margin-top: 15px;
+}
 
 
 p.alert {
@@ -98,7 +105,11 @@ p.notice {
 }
 
 .container-fluid {
-  
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:100%;
+text-align:center;
   
 }
 

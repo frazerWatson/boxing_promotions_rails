@@ -1,6 +1,4 @@
-*:focus {
-outline: 0;
-}
+
 .jumbotron_button {
   background-color: gold;
   height: 50px;
@@ -28,10 +26,10 @@ outline: 0;
   font-family: 'Great Vibes', cursive;
 }
 
-/*.carousel {
+.carousel {
   height:95%;
 
-}*/
+}
 
 .carousel-control { background: none !important; filter: none !important; progid:none !important; }
 
