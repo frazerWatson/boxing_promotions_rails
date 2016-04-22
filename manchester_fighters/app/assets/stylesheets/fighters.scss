@@ -1,3 +1,6 @@
+*:focus {
+outline: 0;
+}
 .jumbotron_button {
   background-color: gold;
   height: 50px;
@@ -25,9 +28,10 @@
   font-family: 'Great Vibes', cursive;
 }
 
-.carousel {
+/*.carousel {
   height:95%;
-}
+
+}*/
 
 .carousel-control { background: none !important; filter: none !important; progid:none !important; }
 
@@ -48,6 +52,7 @@
   width:100%;
   height:auto;
   overflow:hidden
+
 }
 
 .profile_circle {
