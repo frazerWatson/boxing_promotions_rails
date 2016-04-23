@@ -1,13 +1,13 @@
 .jumbotron_button {
   background-color: gold;
-  height: 30px;
-  width: 150px;
+  height: auto;
+  width: auto;
   border-style: none;
   border-radius: 30px;
   color: white;
   margin-bottom: 20px;
   margin-left: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .jumbotron_button:hover {
@@ -32,6 +32,11 @@
     vertical-align: top;
     font-size: 50px;
 font-family: 'Great Vibes', cursive;
+}
+
+.carousel-caption-h3 {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .carousel-inner > h1 {
