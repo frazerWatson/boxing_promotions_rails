@@ -1,7 +1,7 @@
 .jumbotron_button {
   background-color: gold;
-  height: 50px;
-  width: 300px;
+  height: auto;
+  width: auto;
   border-style: none;
   border-radius: 30px;
   color: white;
@@ -26,18 +26,27 @@
 }
 
 .carousel {
-  height:95%;
+  height:auto;
 
 }
 
 .carousel-control { background: none !important; filter: none !important; progid:none !important; }
 
+h3 {
+  font-size: 2em;
+}
+
+.carousel-caption {
+  height: auto;
+  width: auto;
+  text-align: center;
+}
 
   .carousel-caption-h1 {
-    
-    
+    height: auto;
+   width: auto;
     vertical-align: top;
-    font-size: 60px;
+    font-size: 4em;
     font-family: 'Great Vibes', cursive;
 }
 
