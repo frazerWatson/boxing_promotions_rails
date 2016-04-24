@@ -39,7 +39,7 @@
  <%= f.fields_for :fighter do |fighter_form| %>
    <div class="field"><%= fighter_form.label :name %><br/>
    <%= fighter_form.text_field :name %></div>
-   <div class="field"><%= fighter_form.label :avatar %><br>
+   <div class="field avatar-file"><%= fighter_form.label :avatar %><br>
    <%= fighter_form.file_field :avatar %></div>
    <div class="field"><%= fighter_form.label :weight %><br />
    <%= fighter_form.text_field :weight %></div>

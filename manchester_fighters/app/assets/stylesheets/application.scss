@@ -189,6 +189,16 @@ border: 1px solid transparent;
     text-align: center;
 }
 
+.avatar-file {
+
+}
+
+input[type=file] {
+    margin: 0 auto;
+    padding-left: 30px;
+    width:200px;
+}
+
 .form {
   width:100%;
   background-color: black;
