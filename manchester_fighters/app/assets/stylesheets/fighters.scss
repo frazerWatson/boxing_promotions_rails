@@ -65,14 +65,14 @@ h3.all_welcome {
   border-radius: 50%;
   border-style: solid;
   border-color: white;
-  border-width: 6px;
+  border-width: 3px;
   -webkit-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.5);
   box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.5);
   /*position: absolute;*/
   /*left: 0;
   bottom: 0;*/
-  width: 25%;
+  width: 100%;
 }
 
 .featured_image_button{
@@ -112,3 +112,54 @@ input[type=file] {
 #error_explanation {
       margin: 0 auto;
 }
+
+
+
+.third_column {
+  width: 33.3%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.third_column_inner {
+  width: 100%;
+  color:white;
+  // max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 10px;
+}
+
+.row {
+  display: table;
+}
+
+.right_bar {
+  width: 100%;
+  float: left;
+  position: relative;
+  bottom: 80px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.container-fluid {
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:100%;
+  text-align:center;
+  
+}
+
