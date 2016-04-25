@@ -62,9 +62,9 @@ h3.all_welcome {
 }
 
 .profile_circle {
-  border-radius: 50%;
+  
   border-style: solid;
-  border-color: white;
+  border-color: gold;
   border-width: 3px;
   -webkit-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.5);
@@ -72,7 +72,7 @@ h3.all_welcome {
   /*position: absolute;*/
   /*left: 0;
   bottom: 0;*/
-  width: 100%;
+  width: 70%;
 }
 
 .featured_image_button{
@@ -115,28 +115,7 @@ input[type=file] {
 
 
 
-.third_column {
-  width: 33.3%;
-  float: left;
-  margin-bottom: 15px;
-}
 
-.third_column_inner {
-  width: 100%;
-  color:white;
-  // max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
-  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
-  text-align: center;
-  padding: 10px;
-}
-
-.row {
-  display: table;
-}
 
 .right_bar {
   width: 100%;
@@ -155,11 +134,70 @@ input[type=file] {
 }
 
 .container-fluid {
-  background: black;
+  background-image: url("boxing-ring-black.jpg");
+   padding-bottom: 5px;
+  background-repeat:no-repeat;
+width:100%;
+background-position:center;
+  color: white;
+  background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
   width:100%;
   text-align:center;
   
+}
+
+
+
+h1 {
+  text-align: center;
+  
+}
+
+.fighter_title {
+  background-image: url("15017628337_4287ccc748_b.jpg");
+   text-align: center;
+  background-color: black;
+  color:gold;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.boxes {
+  display:table;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  display: table-cell;
+  text-align: center;
+  vertical-align:middle;
+  line-height: 2em;
+}
+
+@media (max-width: 420px) {
+    .box {
+        display: block;
+        width: 100%;
+    }
+}
+
+body {
+  background-color: black;
+}
+
+.sign_in {
+  background: black;
+  color:grey;
+}
+
+.border {
+  padding-bottom: 2px;
+  background: gold
+
 }
 

@@ -9,33 +9,38 @@
   <link rel="stylesheet" href="/stylesheets/fighters.scss">
 </head>
 <body>
-<h1>Fighters</h1>
+<div class="fighter_title"><h1 class="fighter_page">Our Fighters</h1>
+<h3>The Road Warriors</h3>
+<p>We have fighters from all weight divisions and of all levels of experience, from novice to expert, 
+ready to travel nationwide to put on the best show for you and your audience. Only the most dedicated </p>
+</div>
+<div class="border">
+  </div>
 <% if user_signed_in? %>
   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 <% else %>
-  <%= link_to "Sign in", new_user_session_path %>
+  <div class="sign_in"><%= link_to "Sign in", new_user_session_path %></div>
   
 <% end %>
-<div class='container-fluid'>
-<% if @fighters.any? %>
-<ul>
-<% @fighters.each do |fighter| %>
-<div class="third_column">
-      <div class="third_column_inner">
-  <h4><%= fighter.name %></h4>
-    <p><%= image_tag fighter.avatar.url(:medium), class:"profile_circle" %></br><p>
-  <p>Weight: <%= fighter.weight %></p>
-  <p>Height: <%= fighter.height %></p>
-<% end %>
+
+<div class="container-fluid">
+<div class="boxes">
+  <% @fighters.each do |fighter| %>
+   <div class="box"><h4><%=fighter.name%></h4>
+   <%= image_tag fighter.avatar.url(:medium), class:"profile_circle" %>
+ </br>
+  Weight: <%= fighter.weight %>
+  <br>
+  Height: <%= fighter.height %></div>
+<%end%>
 </div>
 </div>
-<% else %>
-<p>No fighters yet</p>
-<% end %>
-</div>
+
 
 </body>
 </html>
+
+
 
 
 
