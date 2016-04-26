@@ -143,7 +143,7 @@ background-position:center;
   background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
-  width:100%;
+  
   text-align:center;
   
 }
@@ -202,14 +202,39 @@ body {
 }
 
 p {
-  background-image: url("15017628337_4287ccc748_b.jpg");
   padding: 15px;
   color:white;
   background: #333;
-  margin:0px;
+  margin-bottom:0px;
+  margin-top: 0px;
 }
 
 body.about {
   background: black;
+}
+
+body.contacts {
+  background: black;
+}
+
+body.events {
+  background: black;
+}
+
+.event_image {
+   padding-bottom: 5px;
+  background-repeat:no-repeat;
+width:100%;
+background-position:center;
+  color: white;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.container-fluid-events {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
